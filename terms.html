@@ -6,83 +6,344 @@
     <title>Terms of Use - Numora</title>
     <style>
         body {
-            font-family: -apple-system, system-ui, sans-serif;
-            line-height: 1.5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
             color: #333;
-            margin: 0;
-            padding: 12px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
         }
         h1 {
             color: #2c3e50;
-            font-size: 22px;
-            margin-bottom: 12px;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
         }
         h2 {
             color: #3498db;
-            font-size: 18px;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #34495e;
+            font-size: 16px;
             margin-top: 20px;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
         p {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            text-align: justify;
         }
-        ul {
-            margin-bottom: 10px;
-            padding-left: 20px;
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 30px;
         }
         li {
-            margin-bottom: 4px;
+            margin-bottom: 8px;
         }
         .updated {
             color: #7f8c8d;
             font-style: italic;
-            margin-bottom: 20px;
-            font-size: 13px;
+            margin-bottom: 30px;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 15px 0;
+        }
+        .contact-info {
+            background-color: #e8f5e8;
+            border: 1px solid #27ae60;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a;
+                color: #ffffff;
+            }
+            h1 {
+                color: #ffffff;
+                border-bottom-color: #6bb6ff;
+            }
+            h2 {
+                color: #6bb6ff;
+                border-left-color: #6bb6ff;
+            }
+            h3 {
+                color: #8db4d4;
+            }
+            .updated {
+                background-color: #2a2a2a;
+                color: #cccccc;
+            }
+            .highlight {
+                background-color: #3a3a2a;
+                border-color: #ffd93d;
+                color: #ffffff;
+            }
+            .contact-info {
+                background-color: #1a3a1a;
+                border-color: #27ae60;
+                color: #ffffff;
+            }
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Terms of Use</h1>
-    <p class="updated">Last Updated: March 30, 2024</p>
+    <p class="updated">Last Updated: December 24, 2024</p>
     
-    <h2>1. Acceptance of Terms</h2>
-    <p>Welcome to Numora. By accessing or using our mobile application and services, you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use our application.</p>
-    
-    <h2>2. Description of Service</h2>
-    <p>Numora is a document management application that helps users organize and process their receipts, invoices, and other financial documents.</p>
-    
-    <h2>3. User Accounts</h2>
-    <p>To use certain features of our service, you may need to create an account. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.</p>
-    
-    <h2>4. User Content</h2>
-    <p>You retain ownership of any content you upload to our service. By uploading content, you grant us a non-exclusive license to use, store, and process this content for the purpose of providing our services.</p>
-    
-    <h2>5. Privacy</h2>
-    <p>Your privacy is important to us. Please review our Privacy Policy to understand how we collect, use, and disclose information about you.</p>
-    
-    <h2>6. Prohibited Conduct</h2>
-    <p>You agree not to:</p>
-    <ul>
-        <li>Use our service for any illegal purpose</li>
-        <li>Violate any laws or regulations</li>
-        <li>Impersonate any person or entity</li>
-        <li>Interfere with the proper functioning of the service</li>
-        <li>Attempt to gain unauthorized access to our systems</li>
-    </ul>
-    
-    <h2>7. Termination</h2>
-    <p>We reserve the right to terminate or suspend your account at our discretion, without notice, particularly if you violate these Terms of Use.</p>
-    
-    <h2>8. Disclaimer of Warranties</h2>
-    <p>Our service is provided "as is" without any warranties, expressed or implied.</p>
-    
-    <h2>9. Limitation of Liability</h2>
-    <p>To the maximum extent permitted by law, Numora shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use or inability to use the service.</p>
-    
-    <h2>10. Changes to Terms</h2>
-    <p>We may modify these Terms of Use at any time. Continued use of the service after changes constitutes acceptance of the modified terms.</p>
-    
-    <h2>11. Contact Information</h2>
-    <p>If you have any questions about these Terms, please contact us at support@numora.app.</p>
+    <div class="highlight">
+        <strong>Important Notice:</strong> These Terms of Use govern your use of the Numora mobile application and related services. Please read them carefully before using our services.
+    </div>
+
+    <div class="section">
+        <h2>1. Acceptance of Terms</h2>
+        <p>Welcome to Numora ("we," "our," or "us"). By downloading, accessing, or using our mobile application and services (collectively, the "Service"), you ("you" or "user") agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, please do not use our Service.</p>
+        <p>These Terms constitute a legally binding agreement between you and Numora. By using our Service, you represent that you are at least 18 years old or have reached the age of majority in your jurisdiction.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Description of Service</h2>
+        <p>Numora is a comprehensive document management and financial tracking application designed to help users:</p>
+        <ul>
+            <li>Organize and process receipts, invoices, and financial documents</li>
+            <li>Extract and categorize financial data using OCR technology</li>
+            <li>Track expenses and manage budgets</li>
+            <li>Generate financial reports and analytics</li>
+            <li>Manage payment accounts and financial activities</li>
+            <li>Set up notifications and reminders for financial tasks</li>
+        </ul>
+        <p>Our Service may include features powered by artificial intelligence and machine learning technologies to enhance document processing and data extraction capabilities.</p>
+    </div>
+
+    <div class="section">
+        <h2>3. User Accounts and Registration</h2>
+        <h3>3.1 Account Creation</h3>
+        <p>To access certain features of our Service, you may need to create an account. You agree to provide accurate, current, and complete information during the registration process and to update such information as necessary.</p>
+        
+        <h3>3.2 Account Security</h3>
+        <p>You are responsible for:</p>
+        <ul>
+            <li>Maintaining the confidentiality of your account credentials</li>
+            <li>All activities that occur under your account</li>
+            <li>Notifying us immediately of any unauthorized access or security breach</li>
+        </ul>
+        
+        <h3>3.3 Account Termination</h3>
+        <p>You may terminate your account at any time by contacting us or using the account deletion feature in the app. We reserve the right to suspend or terminate accounts that violate these Terms.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. User Content and Data</h2>
+        <h3>4.1 Ownership</h3>
+        <p>You retain ownership of all content, documents, and data you upload, input, or generate using our Service ("User Content"). This includes but is not limited to:</p>
+        <ul>
+            <li>Financial documents (receipts, invoices, statements)</li>
+            <li>Personal financial data and transaction information</li>
+            <li>Categories, tags, and organizational structures you create</li>
+            <li>Reports and analytics generated from your data</li>
+        </ul>
+        
+        <h3>4.2 License Grant</h3>
+        <p>By uploading User Content, you grant us a limited, non-exclusive, royalty-free license to:</p>
+        <ul>
+            <li>Store, process, and analyze your content to provide the Service</li>
+            <li>Use OCR and AI technologies to extract and categorize information</li>
+            <li>Generate insights, reports, and recommendations based on your data</li>
+            <li>Backup and secure your data for service continuity</li>
+        </ul>
+        
+        <h3>4.3 Data Processing</h3>
+        <p>We may process your User Content using automated technologies, including but not limited to optical character recognition (OCR), machine learning algorithms, and artificial intelligence systems to provide and improve our Service.</p>
+    </div>
+
+    <div class="section">
+        <h2>5. Privacy and Data Protection</h2>
+        <p>Your privacy is important to us. Please review our <a href="privacy.html" style="color: #3498db; text-decoration: none;">Privacy Policy</a> to understand how we collect, use, store, and protect your personal information and User Content.</p>
+        <p>We implement industry-standard security measures to protect your data, including encryption, secure data transmission, and regular security audits.</p>
+    </div>
+
+    <div class="section">
+        <h2>6. Acceptable Use and Prohibited Conduct</h2>
+        <p>You agree not to use our Service to:</p>
+        <ul>
+            <li>Violate any applicable laws, regulations, or third-party rights</li>
+            <li>Upload malicious software, viruses, or harmful code</li>
+            <li>Impersonate any person or entity or misrepresent your affiliation</li>
+            <li>Interfere with or disrupt the proper functioning of the Service</li>
+            <li>Attempt to gain unauthorized access to our systems or other users' accounts</li>
+            <li>Use the Service for any commercial purpose without our explicit consent</li>
+            <li>Upload content that is illegal, harmful, threatening, or inappropriate</li>
+            <li>Reverse engineer, decompile, or attempt to extract the source code of our application</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>7. Intellectual Property Rights</h2>
+        <h3>7.1 Our Rights</h3>
+        <p>The Service, including its software, algorithms, user interface, design, and all related intellectual property rights, are owned by Numora or our licensors and are protected by copyright, trademark, and other intellectual property laws.</p>
+        
+        <h3>7.2 Limited License</h3>
+        <p>We grant you a limited, non-exclusive, non-transferable license to use the Service for your personal, non-commercial purposes, subject to these Terms.</p>
+        
+        <h3>7.3 Trademark</h3>
+        <p>Numora and related logos are trademarks of Numora. You may not use our trademarks without our prior written consent.</p>
+    </div>
+
+    <div class="section">
+        <h2>8. Service Availability and Modifications</h2>
+        <h3>8.1 Service Availability</h3>
+        <p>We strive to maintain high service availability but do not guarantee uninterrupted access to the Service. The Service may be temporarily unavailable due to maintenance, updates, or circumstances beyond our control.</p>
+        
+        <h3>8.2 Service Modifications</h3>
+        <p>We reserve the right to modify, update, or discontinue any aspect of the Service at any time, with or without notice. We will make reasonable efforts to notify users of significant changes that may affect their use of the Service.</p>
+    </div>
+
+    <div class="section">
+        <h2>9. Subscription and Payment Terms</h2>
+        <h3>9.1 Free and Premium Features</h3>
+        <p>Numora may offer both free and premium features. Premium features may require a subscription or one-time payment.</p>
+        
+        <h3>9.2 Payment Processing</h3>
+        <p>Payments are processed through third-party payment processors (such as Apple App Store or Google Play Store). Your payment information is subject to their respective terms and privacy policies.</p>
+        
+        <h3>9.3 Refunds</h3>
+        <p>Refund policies are governed by the terms of the platform through which you made your purchase (App Store, Google Play, etc.).</p>
+    </div>
+
+    <div class="section">
+        <h2>10. Disclaimers and Warranties</h2>
+        <h3>10.1 Service Provided "As Is"</h3>
+        <p>Our Service is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to:</p>
+        <ul>
+            <li>Warranties of merchantability, fitness for a particular purpose, or non-infringement</li>
+            <li>Warranties that the Service will be uninterrupted, error-free, or completely secure</li>
+            <li>Warranties regarding the accuracy or completeness of OCR results or data extraction</li>
+        </ul>
+        
+        <h3>10.2 Financial Information Disclaimer</h3>
+        <p>Numora is a document management and organization tool. We do not provide financial, tax, or legal advice. Any insights or categorizations provided by our Service should not be considered professional advice.</p>
+    </div>
+
+    <div class="section">
+        <h2>11. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by applicable law, Numora and its affiliates, officers, employees, agents, partners, and licensors shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:</p>
+        <ul>
+            <li>Loss of profits, data, use, goodwill, or other intangible losses</li>
+            <li>Damages resulting from your inability to use the Service</li>
+            <li>Damages resulting from any unauthorized access to or alteration of your data</li>
+            <li>Damages resulting from the conduct or content of third parties on or through the Service</li>
+        </ul>
+        <p>Our total liability for any claims arising from or relating to the Service shall not exceed the amount you paid us in the twelve (12) months preceding the claim.</p>
+    </div>
+
+    <div class="section">
+        <h2>12. Indemnification</h2>
+        <p>You agree to indemnify, defend, and hold harmless Numora and its affiliates, officers, agents, employees, and partners from and against any claims, liabilities, damages, losses, and expenses arising out of or in any way connected with:</p>
+        <ul>
+            <li>Your use of the Service</li>
+            <li>Your violation of these Terms</li>
+            <li>Your violation of any rights of another party</li>
+            <li>Your User Content</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>13. Termination</h2>
+        <h3>13.1 Termination by You</h3>
+        <p>You may stop using our Service and terminate your account at any time by contacting us or using the account deletion feature.</p>
+        
+        <h3>13.2 Termination by Us</h3>
+        <p>We reserve the right to suspend or terminate your access to the Service at our discretion, without prior notice, particularly if you:</p>
+        <ul>
+            <li>Violate these Terms</li>
+            <li>Use the Service in a manner that could damage our reputation or harm other users</li>
+            <li>Engage in fraudulent or illegal activities</li>
+        </ul>
+        
+        <h3>13.3 Effect of Termination</h3>
+        <p>Upon termination, your right to use the Service will cease immediately. We may, but are not obligated to, delete your User Content after termination.</p>
+    </div>
+
+    <div class="section">
+        <h2>14. Changes to Terms</h2>
+        <p>We may modify these Terms at any time to reflect changes in our Service, legal requirements, or business practices. We will notify you of material changes by:</p>
+        <ul>
+            <li>Posting the updated Terms in the application</li>
+            <li>Sending an email notification (if you have provided an email address)</li>
+            <li>Displaying a notification when you next access the Service</li>
+        </ul>
+        <p>Your continued use of the Service after such modifications constitutes acceptance of the updated Terms.</p>
+    </div>
+
+    <div class="section">
+        <h2>15. Governing Law and Dispute Resolution</h2>
+        <h3>15.1 Governing Law</h3>
+        <p>These Terms shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law principles.</p>
+        
+        <h3>15.2 Dispute Resolution</h3>
+        <p>Any disputes arising from or relating to these Terms or the Service shall be resolved through binding arbitration in accordance with the rules of [Arbitration Organization], except that you may choose to pursue claims in small claims court if they qualify.</p>
+    </div>
+
+    <div class="section">
+        <h2>16. Miscellaneous</h2>
+        <h3>16.1 Entire Agreement</h3>
+        <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and Numora regarding the Service.</p>
+        
+        <h3>16.2 Severability</h3>
+        <p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.</p>
+        
+        <h3>16.3 No Waiver</h3>
+        <p>Our failure to enforce any provision of these Terms shall not constitute a waiver of such provision or any other provision.</p>
+        
+        <h3>16.4 Assignment</h3>
+        <p>You may not assign or transfer these Terms or your rights hereunder without our prior written consent. We may assign these Terms without restriction.</p>
+    </div>
+
+    <div class="contact-info">
+        <h2>17. Contact Information</h2>
+        <p>If you have any questions, concerns, or feedback about these Terms of Use or our Service, please contact us:</p>
+        <ul>
+            <li><strong>Email:</strong> support@numora.app</li>
+            <li><strong>Website:</strong> https://numora.app</li>
+            <li><strong>Address:</strong> [Your Business Address]</li>
+        </ul>
+        <p>We will make reasonable efforts to respond to your inquiries in a timely manner.</p>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #7f8c8d; font-size: 14px;">
+        <p>© 2024 Numora. All rights reserved.</p>
+        <p>Thank you for using Numora to manage your financial documents!</p>
+    </div>
 </body>
-</html> 
+</html>
